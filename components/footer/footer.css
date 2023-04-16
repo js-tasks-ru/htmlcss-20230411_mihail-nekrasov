@@ -1,0 +1,21 @@
+.footer {
+  background-color: #fff;
+  padding: 71px 0 136px 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer__title {
+  text-align: center;
+}
+
+.footer__info {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 24px;
+}
