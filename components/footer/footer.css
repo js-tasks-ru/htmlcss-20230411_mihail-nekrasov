@@ -14,7 +14,7 @@
 }
 
 .footer__info {
-  width: 800px;
+  max-width: 640px;
   margin: auto;
   text-align: center;
   line-height: 24px;
