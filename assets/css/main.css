@@ -1,24 +1,34 @@
 @import '../fonts/fonts.css';
+@import './normalize.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/main_content/main_content.css';
+@import '../../components/footer/footer.css';
+@import '../../components/content/content.css';
+root {
+  --white: #ffffff;
+  --black: #212429;
+  --pink: #f784ad;
+  --purple: #7048e8;
+  --blue: #374fc7;
+  --red: #f03d3e;
+  --grey-1: #f8f9fa;
+  --grey-2: #dde2e5;
+  --grey-3: #acb5bd;
+  --grey-4: #495057;
 
-:root {
-    --white: #ffffff;
-    --black: #212429;
-    --pink: #F784AD;
-    --purple: #7048E8;
-    --blue: #374FC7;
-    --red: #F03D3E;
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
+  --error: var(--red);
+  --success: var(--blue);
 
-    --error: var(--red);
-    --success: var(--blue);
-
-    --primary: var(--blue);
-    --secondary: var(--purple);
+  --primary: var(--blue);
+  --secondary: var(--purple);
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
 }
