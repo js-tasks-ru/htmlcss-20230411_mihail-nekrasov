@@ -3,12 +3,11 @@
 /*
 * BASE STYLES
 */
-button {
-  --disabled-opacity: 0.5;
-  --active-opacity: 0.8;
-}
 
 .button {
+  --disabled-opacity: 0.5;
+  --active-opacity: 0.8;
+  user-select: none;
   border: none;
   font-size: var(--font-middle);
   border-radius: var(--radius);
@@ -18,7 +17,7 @@ button {
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button:disabled {
-  cursor: default;
+  pointer-events: none;
   opacity: var(--disabled-opacity);
 }
 .button:hover {
@@ -59,17 +58,7 @@ button {
   background-color: var(--white);
   color: var(--grey-4);
 }
-.button_primary[disabled]:hover {
-  background: var(--primary);
-}
-.button_secondary[disabled]:hover {
-  background-color: var(--secondary);
-}
-.button_alternate[disabled]:hover {
-  border-color: var(--grey-3);
 
-  color: var(--grey-3);
-}
 /*
 * ACTIVE
 */
@@ -81,13 +70,4 @@ button {
 }
 .button_alternate:active {
   opacity: var(--active-opacity);
-}
-.button_primary[disabled]:active {
-  opacity: var(--disabled-opacity);
-}
-.button_secondary[disabled]:active {
-  opacity: var(--disabled-opacity);
-}
-.button_alternate[disabled]:active {
-  opacity: var(--disabled-opacity);
 }
