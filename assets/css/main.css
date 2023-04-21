@@ -5,7 +5,7 @@
 @import '../../components/main_content/main_content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/content/content.css';
-root {
+:root {
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
@@ -22,6 +22,9 @@ root {
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --base: 4px;
+  --radius: calc(var(--base) * 2);
 }
 
 * {
