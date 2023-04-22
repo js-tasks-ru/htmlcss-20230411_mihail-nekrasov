@@ -5,12 +5,12 @@
 @import '../../components/main_content/main_content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/content/content.css';
-root {
+:root {
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
-  --blue: #374fc7;
+  --blue: #4263eb;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -22,6 +22,9 @@ root {
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --base: 4px;
+  --radius: calc(var(--base) * 4);
 }
 
 * {
@@ -31,4 +34,5 @@ root {
 body * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
