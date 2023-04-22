@@ -26,10 +26,12 @@
   --font-middle: 16px;
 }
 
-body {
-  box-sizing: border-box;
-}
-
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
