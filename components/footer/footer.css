@@ -1,6 +1,6 @@
 .footer {
   background-color: #fff;
-  padding: 71px 0 136px 0;
+  padding: calc(var(--base) * 17.75) 0 calc(var(--base) * 34) 0;
 }
 
 .footer__content {

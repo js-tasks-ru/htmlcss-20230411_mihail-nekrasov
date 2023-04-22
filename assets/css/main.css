@@ -5,7 +5,11 @@
 @import '../../components/main_content/main_content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/content/content.css';
-root {
+@import '../../components/card/card.css';
+@import '../../components/card_list/card_list.css';
+@import '../../components/typography/typography.css';
+
+:root {
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
@@ -22,13 +26,18 @@ root {
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --base: 4px;
+  --radius: calc(var(--base) * 4);
 }
 
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-body * {
+html body * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  hyphens: auto;
 }

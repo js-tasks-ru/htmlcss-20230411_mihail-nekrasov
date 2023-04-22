@@ -1,0 +1,6 @@
+.card {
+  min-width: calc(var(--base) * 87.5);
+  min-height: calc(var(--base) * 91.75);
+  background-color: var(--white);
+  border-radius: var(--radius);
+}

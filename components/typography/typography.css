@@ -1,0 +1,23 @@
+.typo-h1 {
+  font-family: 'Inter medium';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0em;
+}
+
+.typo-h2 {
+  font-family: 'Inter medium';
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+.typo-p {
+  font-family: 'Inter regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
