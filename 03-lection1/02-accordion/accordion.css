@@ -8,6 +8,13 @@ details > summary {
 }
 
 .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base) * 2);
+  padding: calc(var(--base) * 2);
+}
+
+.accordion__details {
   border: 1px solid var(--grey-3);
   border-radius: var(--radius);
   transition: all 1s;
@@ -32,6 +39,6 @@ details > summary {
   transition: all 0.1s;
   margin-top: 3px;
 }
-.accordion[open] .accordion__expand-icon {
+.accordion__details[open] .accordion__expand-icon {
   transform: rotate(180deg);
 }
