@@ -1,12 +1,4 @@
 /* Стилизация аккордеона */
-@import '../../assets/css/main.css';
-details summary::-webkit-details-marker {
-  display: none;
-}
-details > summary {
-  list-style: none;
-}
-
 .accordion {
   display: flex;
   flex-direction: column;
@@ -30,11 +22,13 @@ details > summary {
   align-items: start;
   gap: calc(var(--base) * 5);
 }
+
 .accordion__content {
   padding: calc(var(--base) * 8);
   padding-top: 0;
   color: var(--grey-4);
 }
+
 .accordion__expand-icon {
   transition: all 0.1s;
   margin-top: 3px;
