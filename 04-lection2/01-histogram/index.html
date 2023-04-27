@@ -13,26 +13,9 @@
           <div class="histogram__label">Total orders</div>
           <div class="histogram__total"></div>
         </div>
-        <div class="histogram__link">
-          <a href="#">View all</a>
-        </div>
+        <a class="histogram__link" href="#">View all</a>
       </div>
-      <div class="histogram__main">
-        <!-- <div class="histogram__scale">
-          <div class="histogram__row-number">100</div>
-          <div class="histogram__row-number">75</div>
-          <div class="histogram__row-number">50</div>
-          <div class="histogram__row-number">25</div>
-        </div>
-        <div class="histogram__chart">
-          <div class="histogram__grid">
-            <div class="histogram__row"></div>
-            <div class="histogram__row"></div>
-            <div class="histogram__row"></div>
-            <div class="histogram__row"></div>
-          </div>
-        </div> -->
-      </div>
+      <div class="histogram__main"></div>
     </div>
     <script>
       const barContainer =
@@ -53,7 +36,6 @@
         total;
 
       function randomInteger(min, max) {
-        // получить случайное число от (min-0.5) до (max+0.5)
         let rand = min - 0.5 + Math.random() * (max - min + 1);
         return Math.round(rand);
       }

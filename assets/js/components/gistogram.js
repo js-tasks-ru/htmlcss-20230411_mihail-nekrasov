@@ -6,6 +6,7 @@ class Chart {
     this.container = params.container;
     this.maxHeight = params.container.clientHeight;
   }
+
   findMaxValue() {
     return this.data.reduce((prev, curr) => {
       if (prev > curr) return prev;
@@ -30,13 +31,13 @@ class Chart {
     return barChartEl;
   }
 
-  getScaleNumbersEl(maxValue) {
+  getScaleEl(maxValue) {
     const scaleEl = document.createElement('div');
     scaleEl.classList.add('histogram__scale');
     for (let i = 0; i < this.scaleRows; i++) {
       const scaleNumEl = document.createElement('div');
-      scaleNumEl.classList.add('histogram__row-number');
-      scaleNumEl.textContent = Math.round((maxValue + 25) / (i + 1));
+      scaleNumEl.classList.add('histogram__scale-number');
+      scaleNumEl.textContent = Math.round(maxValue / (i + 1));
       scaleEl.appendChild(scaleNumEl);
     }
     return scaleEl;
@@ -47,7 +48,7 @@ class Chart {
     chartGridEl.classList.add('histogram__grid');
     for (let i = 0; i < this.scaleRows; i++) {
       const gridRowEl = document.createElement('div');
-      gridRowEl.classList.add('histogram__row');
+      gridRowEl.classList.add('histogram__grid-row');
       chartGridEl.appendChild(gridRowEl);
     }
     return chartGridEl;
@@ -56,7 +57,7 @@ class Chart {
   render() {
     switch (this.type) {
       case 'bar':
-        const scaleEl = this.getScaleNumbersEl(this.findMaxValue());
+        const scaleEl = this.getScaleEl(this.findMaxValue());
         const gridChartEl = this.getChartGridEl();
         const chartEl = this.getBarChartEl();
         chartEl.appendChild(gridChartEl);
