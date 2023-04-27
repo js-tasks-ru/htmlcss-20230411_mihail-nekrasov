@@ -17,11 +17,26 @@
           <a href="#">View all</a>
         </div>
       </div>
-      <div class="histogram__chart"></div>
+      <div class="histogram__main">
+        <!-- <div class="histogram__scale">
+          <div class="histogram__row-number">100</div>
+          <div class="histogram__row-number">75</div>
+          <div class="histogram__row-number">50</div>
+          <div class="histogram__row-number">25</div>
+        </div>
+        <div class="histogram__chart">
+          <div class="histogram__grid">
+            <div class="histogram__row"></div>
+            <div class="histogram__row"></div>
+            <div class="histogram__row"></div>
+            <div class="histogram__row"></div>
+          </div>
+        </div> -->
+      </div>
     </div>
     <script>
       const barContainer =
-        document.getElementsByClassName('histogram__chart')[0];
+        document.getElementsByClassName('histogram__main')[0];
       const data = Array.from({ length: 30 }, () => randomInteger(1, 100));
 
       new Chart({
