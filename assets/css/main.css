@@ -5,12 +5,13 @@
 @import '../../components/main_content/main_content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/content/content.css';
+
 :root {
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
-  --blue: #374fc7;
+  --blue: #4263eb;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -21,10 +22,13 @@
   --success: var(--blue);
 
   --primary: var(--blue);
+  --primary-hover: #2342c0;
   --secondary: var(--purple);
 
   --base: 4px;
   --radius: calc(var(--base) * 2);
+  --font-middle: 16px;
+  --secondary-hover: #5028c6;
 }
 
 * {
@@ -32,6 +36,7 @@
 }
 
 body * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }

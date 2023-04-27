@@ -1,1 +1,73 @@
 /* Стилизация кнопки */
+
+/*
+* BASE STYLES
+*/
+
+.button {
+  --disabled-opacity: 0.5;
+  --active-opacity: 0.8;
+  user-select: none;
+  border: none;
+  font-size: var(--font-middle);
+  border-radius: var(--radius);
+  min-width: calc(var(--base) * 48);
+  height: calc(var(--base) * 12);
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.button:disabled {
+  pointer-events: none;
+  opacity: var(--disabled-opacity);
+}
+.button:hover {
+  background-color: var(--grey-3);
+}
+.button:active {
+  opacity: var(--active-opacity);
+}
+
+/*
+* DEFAULT
+*/
+.button_primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.button_secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.button_alternate {
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  color: var(--grey-3);
+}
+
+/*
+* HOVER
+*/
+.button_primary:hover {
+  background: var(--primary-hover);
+}
+.button_secondary:hover {
+  background-color: var(--secondary-hover);
+}
+.button_alternate:hover {
+  border-color: var(--grey-4);
+  background-color: var(--white);
+  color: var(--grey-4);
+}
+
+/*
+* ACTIVE
+*/
+.button_primary:active {
+  opacity: var(--active-opacity);
+}
+.button_secondary:active {
+  opacity: var(--active-opacity);
+}
+.button_alternate:active {
+  opacity: var(--active-opacity);
+}
