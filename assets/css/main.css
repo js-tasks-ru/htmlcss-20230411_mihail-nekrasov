@@ -5,6 +5,7 @@
 @import '../../components/main_content/main_content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/content/content.css';
+
 :root {
   --white: #ffffff;
   --black: #212429;
@@ -21,10 +22,13 @@
   --success: var(--blue);
 
   --primary: var(--blue);
+  --primary-hover: #2342c0;
   --secondary: var(--purple);
 
   --base: 4px;
   --radius: calc(var(--base) * 4);
+  --secondary-hover: #5028c6;
+  --font-middle: 16px;
 }
 
 * {
@@ -32,6 +36,7 @@
 }
 
 body * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
