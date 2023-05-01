@@ -1,0 +1,22 @@
+.skeleton {
+  width: 100%;
+  height: calc(var(--base) * 5);
+  background-color: var(--grey-2);
+}
+.skeleton.skeleton_sm {
+  width: 25%;
+}
+
+.skeleton.skeleton_md {
+  width: 50%;
+}
+
+.skeleton.skeleton_lg {
+  width: 75%;
+}
+
+.skeleton.skeleton_crl {
+  width: calc(var(--base) * 16);
+  height: calc(var(--base) * 16);
+  border-radius: 50%;
+}
