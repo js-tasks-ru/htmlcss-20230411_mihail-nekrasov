@@ -1,5 +1,10 @@
 @import '../fonts/fonts.css';
 @import './normalize.css';
+@import '../../components/page/page.css';
+@import '../../components/header/header.css';
+@import '../../components/main_content/main_content.css';
+@import '../../components/footer/footer.css';
+@import '../../components/content/content.css';
 
 :root {
   --white: #ffffff;
@@ -19,11 +24,11 @@
   --primary: var(--blue);
   --primary-hover: #2342c0;
   --secondary: var(--purple);
-  --secondary-hover: #5028c6;
 
   --base: 4px;
   --radius: calc(var(--base) * 2);
   --font-middle: 16px;
+  --secondary-hover: #5028c6;
 }
 
 * {
