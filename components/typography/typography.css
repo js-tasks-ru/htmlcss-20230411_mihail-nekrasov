@@ -1,4 +1,4 @@
-.typo-h1 {
+.typo_h1 {
   font-family: 'Inter medium';
   font-size: 50px;
   font-weight: 500;
@@ -6,7 +6,7 @@
   letter-spacing: 0em;
 }
 
-.typo-h2 {
+.typo_h2 {
   font-family: 'Inter medium';
   font-size: 38px;
   font-weight: 500;
@@ -14,7 +14,7 @@
   letter-spacing: 0em;
 }
 
-.typo-p {
+.typo_p {
   font-family: 'Inter regular';
   font-size: 16px;
   font-weight: 400;
