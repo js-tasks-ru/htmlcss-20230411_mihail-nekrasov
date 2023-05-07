@@ -17,6 +17,7 @@
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
+  --grey-5: #f9fafc;
 
   --error: var(--red);
   --success: var(--blue);
@@ -33,6 +34,10 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
 }
 
 body * {

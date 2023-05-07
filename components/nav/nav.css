@@ -1,0 +1,35 @@
+.nav {
+  font-family: 'Inter light';
+}
+.nav__header {
+  font-family: 'Inter light';
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.nav__main {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--base);
+}
+
+.nav__secondary {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--base);
+}
+
+.nav__item {
+  font-family: 'Inter light';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212429;
+}
+.nav__item_active {
+  color: var(--red);
+}
