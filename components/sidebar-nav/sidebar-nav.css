@@ -1,7 +1,7 @@
-.nav {
+.sidebar-nav {
   font-family: 'Inter light';
 }
-.nav__header {
+.sidebar-nav__header {
   font-family: 'Inter light';
   font-size: 20px;
   line-height: 26px;
@@ -9,27 +9,28 @@
   font-weight: 400;
 }
 
-.nav__main {
+.sidebar-nav__main {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: var(--base);
 }
 
-.nav__secondary {
+.sidebar-nav__secondary {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: var(--base);
 }
 
-.nav__item {
+.sidebar-nav__item {
   font-family: 'Inter light';
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #212429;
+  text-decoration: none;
 }
-.nav__item_active {
-  color: var(--red);
+.sidebar-nav__item_active {
+  color: var(--red-2);
 }

@@ -1,5 +1,5 @@
 @import '../assets/css/main.css';
-@import '../components/nav/nav.css';
+@import '../components/sidebar-nav/sidebar-nav.css';
 
 .cmp-page {
   height: 100%;
@@ -17,9 +17,11 @@
 }
 
 .cmp-page__nav {
+  grid-column: 2 / span 1;
 }
 
 .cmp-page__content {
+  grid-column: 3 / span 1;
   background-color: var(--white);
   border-radius: var(--radius);
 }
