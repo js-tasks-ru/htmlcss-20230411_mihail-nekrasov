@@ -26,9 +26,10 @@
   --secondary: var(--purple);
 
   --base: 4px;
-  --radius: calc(var(--base) * 4);
+  --radius: calc(var(--base) * 2);
   --secondary-hover: #5028c6;
   --font-middle: 16px;
+  --secondary-hover: #5028c6;
 }
 
 html,
