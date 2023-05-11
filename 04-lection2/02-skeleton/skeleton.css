@@ -1,22 +1,45 @@
 .skeleton {
-  width: 100%;
-  height: calc(var(--base) * 5);
-  background-color: var(--grey-2);
-}
-.skeleton.skeleton_sm {
-  width: 25%;
+  border: 1px solid #acb5bd;
+  padding: 24px 40px 32px 24px;
+  border-radius: 8px;
 }
 
-.skeleton.skeleton_md {
-  width: 50%;
+.skeleton__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.skeleton.skeleton_lg {
-  width: 75%;
-}
-
-.skeleton.skeleton_crl {
-  width: calc(var(--base) * 16);
-  height: calc(var(--base) * 16);
+.skeleton__circle {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
+  background: #dde2e5;
+}
+
+.skeleton__title {
+  flex-shrink: 1;
+  flex-basis: 100%;
+  margin-left: 16px;
+}
+
+.skeleton__line {
+  height: 20px;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 8px;
+  background: #dde2e5;
+}
+
+.skeleton__line:last-child {
+  margin-bottom: 0;
+}
+
+.skeleton__line_name {
+  max-width: 172px;
+}
+
+.skeleton__line_date {
+  max-width: 257px;
 }
