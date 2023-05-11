@@ -1,7 +1,6 @@
 .histogram {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: calc(var(--base) * 9.25);
   min-width: calc(var(--base) * 88.5);
   border: 1px solid var(--grey-3);
