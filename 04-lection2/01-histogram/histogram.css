@@ -1,48 +1,44 @@
 .histogram {
-  width: calc(var(--base) * 88.5);
-  height: calc(var(--base) * 46.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: calc(var(--base) * 9.25);
+  min-width: calc(var(--base) * 88.5);
   border: 1px solid var(--grey-3);
   border-radius: var(--radius);
   padding: calc(var(--base) * 4) calc(var(--base) * 6) calc(var(--base) * 6)
     calc(var(--base) * 6);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* gap: 40px; */
 }
 
 .histogram__summary {
-  /* flex-grow: 1; */
   display: flex;
   justify-content: space-between;
+  height: calc(var(--base) * 14);
 }
 
 .histogram__label {
-  font-size: 16px;
   color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
 }
 .histogram__total {
-  margin-top: 6px;
+  margin-top: calc(var(--base) * 1.5);
   font-size: 20px;
   color: var(--black);
 }
-.histogram__link {
+.histogram__link > a {
   text-decoration: none;
   color: var(--purple);
 }
 
-.histogram__main {
-  display: flex;
-  gap: 12px;
-  height: 50px;
-}
-
 .histogram__chart {
+  flex-basis: calc(var(--base) * 12.5);
   display: flex;
   align-items: end;
   gap: 1px;
-  position: relative;
-  flex-grow: 1;
 }
 
 .histogram__bar {
@@ -53,41 +49,4 @@
 .histogram__bar:hover {
   cursor: pointer;
   opacity: 0.5;
-}
-
-/***/
-
-.histogram__grid {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
-  height: calc(100% + 5px);
-  width: calc(100% + 10px);
-  padding-top: 2px;
-  left: -5px;
-  bottom: -1px;
-  z-index: -1;
-}
-
-.histogram__grid-row {
-  border-top: 1px dotted lightgray;
-  width: calc(100% + 5px);
-  margin-left: -5px;
-  flex-grow: 1;
-}
-
-.histogram__scale {
-  display: flex;
-  flex-direction: column;
-  margin-left: -10px;
-}
-
-.histogram__scale-number {
-  font-size: 8px;
-  flex-grow: 1;
-  display: flex;
-  justify-content: end;
-  margin-top: -5px;
 }
