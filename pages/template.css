@@ -1,7 +1,7 @@
 @import '../assets/css/main.css';
 @import '../components/sidebar-nav/sidebar-nav.css';
 
-.cmp-page {
+.page_inner {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 229px 825px 1fr;
@@ -11,22 +11,22 @@
   background-color: var(--grey-5);
 }
 
-.cmp-page__header {
+.page_inner .page__header {
   background-color: var(--white);
   grid-column: 1 / span 4;
 }
 
-.cmp-page__nav {
+.page_inner .page__nav {
   grid-column: 2 / span 1;
 }
 
-.cmp-page__content {
+.page_inner .page__content {
   grid-column: 3 / span 1;
   background-color: var(--white);
   border-radius: var(--radius);
 }
 
-.cmp-page__footer {
+.page_inner .page__footer {
   display: flex;
   width: 100%;
   grid-column: 1 / span 4;
