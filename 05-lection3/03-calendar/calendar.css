@@ -1,8 +1,8 @@
 .calendar {
   display: grid;
   row-gap: 16px;
-  grid-template-columns: repeat(1, minmax(calc(var(--base) * 60.5), 1fr));
-  padding: calc(var(--base) * 6) calc(var(--base) * 7.5);
+  grid-template-columns: minmax(calc(var(--base) * 60.5), 1fr);
+  padding: calc(var(--base) * 7) calc(var(--base) * 6.5) calc(var(--base) * 8);
   border: 1px solid var(--grey-3);
   border-radius: var(--radius);
 }
@@ -40,10 +40,10 @@
   cursor: pointer;
 }
 
-.calendar__number.calendar__number_chosen {
+.calendar__number_chosen {
   background-color: var(--blue);
   color: var(--white);
 }
-.calendar__number.calendar__number_chosen-between {
+.calendar__number_chosen-between {
   background-color: #eceffd;
 }
