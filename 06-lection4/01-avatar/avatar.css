@@ -1,0 +1,10 @@
+.avatar {
+  width: calc(var(--base) * 25.5);
+  height: calc(var(--base) * 25.5);
+}
+.avatar__img {
+  width: calc(var(--base) * 25.5);
+  height: calc(var(--base) * 25.5);
+  object-fit: cover;
+  border-radius: 50%;
+}
