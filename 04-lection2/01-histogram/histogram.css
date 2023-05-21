@@ -28,7 +28,7 @@
   font-size: 20px;
   color: var(--black);
 }
-.histogram__link > a {
+.histogram__link {
   text-decoration: none;
   color: var(--purple);
 }
