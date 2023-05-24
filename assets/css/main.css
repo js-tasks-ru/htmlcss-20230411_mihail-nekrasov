@@ -13,10 +13,12 @@
   --purple: #7048e8;
   --blue: #4263eb;
   --red: #f03d3e;
+  --red-2: #d84910;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
+  --grey-5: #f9fafc;
 
   --error: var(--red);
   --success: var(--blue);
@@ -33,6 +35,10 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
 }
 
 body * {
