@@ -1,6 +1,6 @@
 .footer {
   background-color: #fff;
-  padding: 71px 0 136px 0;
+  padding: calc(var(--base) * 17.75) 0 calc(var(--base) * 34) 0;
 }
 
 .footer__content {
@@ -11,11 +11,20 @@
 
 .footer__title {
   text-align: center;
+  font-family: 'Inter medium';
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
 }
 
 .footer__info {
   max-width: 640px;
   margin: auto;
   text-align: center;
+  font-family: 'Inter regular';
+  font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0em;
 }

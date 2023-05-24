@@ -5,6 +5,8 @@
 @import '../../components/main_content/main_content.css';
 @import '../../components/footer/footer.css';
 @import '../../components/content/content.css';
+@import '../../components/card/card.css';
+@import '../../components/card_list/card_list.css';
 
 :root {
   --white: #ffffff;
@@ -29,7 +31,8 @@
   --secondary: var(--purple);
 
   --base: 4px;
-  --radius: calc(var(--base) * 2);
+  --radius: calc(var(--base) * 4);
+  --secondary-hover: #5028c6;
   --font-middle: 16px;
   --secondary-hover: #5028c6;
 }
@@ -38,8 +41,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body * {
-  box-sizing: border-box;
+html body * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  hyphens: auto;
 }

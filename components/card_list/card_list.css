@@ -1,0 +1,9 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-list__item {
+  flex-basis: calc(var(--base) * 87.5);
+}
