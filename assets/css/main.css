@@ -11,12 +11,15 @@
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
+  --purple-2: #a0b1f5;
   --blue: #4263eb;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
+  --grey-5: #334d6e;
+  --grey-6: #90a0b7;
 
   --error: var(--red);
   --success: var(--blue);
